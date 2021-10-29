@@ -4,8 +4,10 @@ const getBtn = document.getElementById("get-btn");
 
 const getParent = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}`, {
-      Headers: { "Access-Control-Allow-Origin": "*" },
+    const response = await axios({
+      method: "GET",
+      url: `${BASE_URL}`,
+      headers: { "Access-Control-Allow-Origin": "*" },
     });
 
     const Parent = response.data;
