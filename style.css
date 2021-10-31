@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.list li {
+  border-top: 1ch yellow solid;
+  list-style-type: none;
+}
